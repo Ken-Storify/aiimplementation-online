@@ -89,9 +89,15 @@ by hand, everything here is structured so that move wouldn't require starting ov
   up ahead of The AI Implementation Crisis." Revisit once that book has enough material.
 - No analytics wired in (no Plausible/GA/etc.). Worth adding before launch if you want to see
   traffic by section.
-- The Starter Packet download is ungated (no email capture). That was a deliberate call for
-  this pass, true opt-in gating would need an email service connector wired into the download
-  button, which isn't set up yet.
+- The Starter Packet is gated behind a Kit (email) signup form embedded in `senior-housing.html`.
+  Subscribing tags the person `senior-housing-packet` in Kit for segmentation, then redirects
+  straight to the PDF. The .docx version still lives in `downloads/` but isn't linked from the
+  page anymore, if you want a "prefer Word" option back, either add a second link after signup
+  or point the redirect at a small thank-you page that offers both formats.
+- Ken's Kit account is on a 14-day trial of the paid Creator plan (no card on file). Decide
+  before the trial ends whether to add a card or let it fall back to the free Newsletter plan.
+- When the General Business Starter Packet ships, build it a matching Kit form + tag
+  (e.g. `general-business-packet`) and gate it the same way.
 
 ## What's next (from the project roadmap)
 
