@@ -1,3 +1,14 @@
+// Privacy-friendly analytics by Plausible
+(function () {
+  window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments); };
+  plausible.init = plausible.init || function (i) { plausible.o = i || {}; };
+  plausible.init();
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://plausible.io/js/pa-TtuS6vKapJ9f6oV--djoe.js";
+  document.head.appendChild(s);
+})();
+
 // aiimplementation.online — shared site behavior
 
 document.addEventListener("DOMContentLoaded", function () {
