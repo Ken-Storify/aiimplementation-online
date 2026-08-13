@@ -11,7 +11,7 @@ folder on any static host.
 ## Structure
 
 ```
-index.html                Hub home — three section cards
+index.html                Hub home — three section cards, each showing that section's latest post
 senior-housing.html       Senior housing section — Latest teaser + Archive + resource cards
 governance.html           Governance section (standing up ahead of The AI Implementation Crisis)
 insurance-coverage.html   Insurance coverage section — Latest teaser + Archive + "Is Your AI Covered?" quiz
@@ -22,6 +22,7 @@ downloads/                The free Board-Ready Starter Packet (PDF + Word), link
                            from senior-housing.html, no email gate
 posts/senior-housing/      One permalink page per week's senior-housing post
 posts/insurance-coverage/  One permalink page per week's insurance-coverage post
+posts/governance/          One permalink page per week's governance post
 ```
 
 ## Running it locally
@@ -44,14 +45,21 @@ This is how the site stays current, and it's a small, repeatable checklist, not 
    Copy an existing post file as the template, it already has the shared header, footer, and
    styling wired up correctly, relative paths and all (`../../styles.css` from two directories
    deep).
-4. On the section page (`senior-housing.html` or `insurance-coverage.html`):
+4. On the section page (`senior-housing.html`, `insurance-coverage.html`, or
+   `governance.html`):
    - Update the **Latest** block to point at the new post (new title, new teaser paragraph,
      new links).
    - Add a new `<li>` to the **Archive** list, newest first, linking to the post you just
      added. The post that was in "Latest" last week doesn't disappear, it just moves down
      into the Archive list, this is what keeps every past edition permanently reachable.
-5. Commit and push to `main`. Vercel auto-deploys on every push, live in under a minute.
-6. Cross-post to LinkedIn as usual. Worth linking back to the permalink page on the site
+5. On the home page (`index.html`), update that section's card. Each of the three `.card`
+   blocks has a `.card-latest` element with a date label and a post link, update the date,
+   the title, and the `href` to match the new Latest post. These are hardcoded on purpose
+   (so the titles are crawlable for SEO), which means they don't update themselves, if you
+   skip this step the front page will keep showing last week's post while the section page
+   shows the new one. See `CLAUDE.md` for the exact markup.
+6. Commit and push to `main`. Vercel auto-deploys on every push, live in under a minute.
+7. Cross-post to LinkedIn as usual. Worth linking back to the permalink page on the site
    (`aiimplementation.online/posts/...`) rather than only posting the full text natively, so
    LinkedIn traffic actually reaches the site and its CTAs.
 
