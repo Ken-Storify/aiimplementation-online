@@ -36,9 +36,23 @@ levels below are updated for every section that got a new post that week:
    the new post but the front page will still show last week's — that's the
    bug this checklist exists to prevent.
 
+   Then, below the cards, `index.html` has a **`.home-archive`** section with
+   one `.archive-col` per section (the smaller "The archive" tiles). Move the
+   post that was in that section's card *last* week to the **top** of its
+   `.archive-col` list (newest first), same `<li>` shape as the section-page
+   Archive:
+
+   ```html
+   <li><a href="posts/<section>/YYYY-MM-DD-slug.html">Prior Post Title</a><span class="archive-date">MONTH D, YYYY</span></li>
+   ```
+
+   So each week the card's outgoing Latest lands in the homepage archive tile,
+   mirroring how it moves into the section page's Archive list.
+
 When applying a pre-built weekly patch that only touches the section pages and
-post files, update `index.html`'s three `.card-latest` blocks yourself in the
-same commit so the homepage doesn't fall behind.
+post files, update `index.html` yourself in the same commit — both the three
+`.card-latest` blocks and the `.home-archive` tiles — so the homepage doesn't
+fall behind.
 
 ## Verifying a homepage change
 
