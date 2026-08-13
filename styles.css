@@ -191,65 +191,30 @@ nav.main-nav a:hover { color: var(--navy); }
 }
 .card a.enter:hover { color: var(--gold); }
 
-/* ---------- Latest-from-each-section strip (home) ---------- */
-.latest-strip { padding: 8px 0 48px; }
-.latest-strip h2 {
-  font-size: 1.6rem;
-  border-bottom: 1px solid var(--gold);
-  padding-bottom: 10px;
-  margin-bottom: 24px;
+/* ---------- Latest post line inside each home card ---------- */
+.card-latest {
+  border-top: 1px solid #e6e2d8;
+  margin-top: 16px;
+  padding-top: 14px;
 }
-.latest-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-@media (max-width: 820px) {
-  .latest-grid { grid-template-columns: 1fr; }
-}
-.latest-item {
-  border: 1px solid #e6e2d8;
-  border-left: 4px solid var(--gold);
-  border-radius: 4px;
-  padding: 22px 24px;
-  background: var(--white);
-  display: flex;
-  flex-direction: column;
-}
-.latest-item .eyebrow {
+.card-latest .card-latest-label {
+  display: block;
   text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  color: var(--gold);
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.latest-item .post-meta {
-  font-size: 0.82rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
   color: #888;
-  font-style: italic;
-  margin-bottom: 8px;
-}
-.latest-item h3 { font-size: 1.15rem; margin-bottom: 8px; }
-.latest-item h3 a { text-decoration: none; }
-.latest-item h3 a:hover { color: var(--gold); }
-.latest-item p.teaser {
-  color: #333;
-  font-size: 0.94rem;
-  flex-grow: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.latest-item a.read-more {
   font-weight: 700;
-  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.card-latest a {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 1.02rem;
+  line-height: 1.3;
   color: var(--navy);
   text-decoration: none;
-  margin-top: 12px;
 }
-.latest-item a.read-more:hover { color: var(--gold); }
+.card-latest a:hover { color: var(--gold); }
 
 /* ---------- Generic content sections ---------- */
 section.block { padding: 48px 0; }

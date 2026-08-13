@@ -21,95 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // "Latest from each section" strip (index.html only)
-  var latestGrid = document.getElementById("latest-grid");
-  if (latestGrid) initLatest(latestGrid);
-
   // "Is Your AI Covered?" self-check (insurance-coverage.html only)
   var quiz = document.getElementById("ai-coverage-quiz");
   if (quiz) initQuiz(quiz);
 });
-
-// Pull each section page's own "Latest" teaser onto the homepage, so the
-// front page updates itself whenever a section page is updated. Each tile
-// keeps a static fallback link if the fetch or parse doesn't succeed.
-function initLatest(grid) {
-  var items = Array.prototype.slice.call(grid.querySelectorAll(".latest-item"));
-  items.forEach(function (item) {
-    var page = item.getAttribute("data-section");
-    if (!page) return;
-    fetch(page, { credentials: "same-origin" })
-      .then(function (res) {
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        return res.text();
-      })
-      .then(function (html) {
-        var doc = new DOMParser().parseFromString(html, "text/html");
-        var teaser = doc.querySelector(".post-teaser");
-        if (!teaser) return;
-        var titleLink = teaser.querySelector("h3 a");
-        if (!titleLink || !titleLink.getAttribute("href")) return;
-
-        var metaEl = teaser.querySelector(".post-meta");
-        var body = null;
-        var paras = teaser.querySelectorAll("p");
-        for (var i = 0; i < paras.length; i++) {
-          var p = paras[i];
-          if (p.classList.contains("post-meta")) continue;
-          if (p.querySelector("a") && /read the full post/i.test(p.textContent)) continue;
-          body = p;
-          break;
-        }
-
-        renderLatestItem(item, {
-          eyebrow: item.getAttribute("data-eyebrow") || "",
-          meta: metaEl ? metaEl.textContent.trim() : "",
-          title: titleLink.textContent.trim(),
-          href: titleLink.getAttribute("href"),
-          teaser: body ? body.textContent.trim() : ""
-        });
-      })
-      .catch(function () {
-        // Leave the static fallback content already in the tile.
-      });
-  });
-}
-
-function renderLatestItem(item, data) {
-  item.innerHTML = "";
-
-  var eyebrow = document.createElement("div");
-  eyebrow.className = "eyebrow";
-  eyebrow.textContent = data.eyebrow;
-  item.appendChild(eyebrow);
-
-  if (data.meta) {
-    var meta = document.createElement("p");
-    meta.className = "post-meta";
-    meta.textContent = data.meta;
-    item.appendChild(meta);
-  }
-
-  var h3 = document.createElement("h3");
-  var titleLink = document.createElement("a");
-  titleLink.href = data.href;
-  titleLink.textContent = data.title;
-  h3.appendChild(titleLink);
-  item.appendChild(h3);
-
-  if (data.teaser) {
-    var teaser = document.createElement("p");
-    teaser.className = "teaser";
-    teaser.textContent = data.teaser;
-    item.appendChild(teaser);
-  }
-
-  var more = document.createElement("a");
-  more.className = "read-more";
-  more.href = data.href;
-  more.innerHTML = "Read the full post &rarr;";
-  item.appendChild(more);
-}
 
 function initQuiz(root) {
   var questions = Array.prototype.slice.call(root.querySelectorAll(".quiz-question"));
