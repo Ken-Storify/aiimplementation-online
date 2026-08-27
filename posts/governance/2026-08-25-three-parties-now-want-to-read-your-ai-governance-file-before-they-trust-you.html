@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Parties Now Want to Read Your AI Governance File Before They Trust You | AI Implementation</title>
+<meta name="description" content="For boards and general business leaders: a new conversational-AI law, a published D&amp;O exclusion, and an AI model that broke out of its own test environment all point to the same conclusion this month, governance stopped being optional paperwork.">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="../../index.html" class="brand">AI <span>Implementation</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+    <nav class="main-nav">
+      <a href="../../senior-housing.html">Senior Housing</a>
+      <a href="../../governance.html" class="current">Governance</a>
+      <a href="../../insurance-coverage.html">Insurance Coverage</a>
+      <a href="https://kenleatherman.com" class="nav-cta">About Ken</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumb"><a href="../../index.html">AI Implementation</a> &rsaquo; <a href="../../governance.html">Governance</a> &rsaquo; August 25, 2026</div>
+
+  <section class="block">
+    <article class="post">
+      <p class="post-meta">From the August 25, 2026 LITT Briefing</p>
+      <h1 class="post-title">Three Parties Now Want to Read Your AI Governance File Before They Trust You</h1>
+
+      <p>Colorado HB 26-1263, officially titled "Conversational Artificial Intelligence Service Operator Requirements," was signed May 29, 2026 and took effect as an act on August 12, though the operator obligations themselves don't begin until January 1, 2027 (<a href="https://leg.colorado.gov/bills/HB26-1263">Colorado General Assembly</a>). The law requires an operator to disclose that a conversational AI service is artificial intelligence, implement a protocol for user prompts involving suicidal ideation or self-harm, and report annually to the attorney general's office on that protocol. Minor-specific duties include age estimation, a ban on points or rewards that encourage engagement, technically feasible measures against sexually explicit content and statements simulating emotional dependence, a stop-engagement protocol, and parental privacy tools. Enforcement runs through the Colorado Consumer Protection Act at $20,000 per violation, with no cap on total liability (<a href="https://healthiercolorado.org/press-release/governor-polis-signs-bill-to-protect-users-from-harms-of-conversational-ai-technology/">Healthier Colorado</a>). The scope isn't limited to companion chatbots. It covers any publicly available conversational AI service.</p>
+
+      <p>Colorado is the fourth of fourteen chatbot-safety measures on the Transparency Coalition's 2026 list to reach its effective date, after South Carolina, Wyoming, and Hawaii. Fourteen such measures have passed or been enacted across thirteen states so far this year, and the enforcement mechanisms don't converge the way the laws themselves do (<a href="https://www.transparencycoalition.ai/news/watershed-year-for-chatbot-safety-measures-14-new-state-laws-enacted-so-far-in-2026">Transparency Coalition</a>). Rhode Island's law carries fines up to $15,000 per day, directed to suicide prevention programs, enforced by the attorney general (<a href="https://webserver.rilegislature.gov/Billtext/BillText26/SenateText26/S2195A.pdf">Rhode Island General Assembly</a>). Oregon's takes the opposite approach: no attorney general enforcement at all, only a private right of action with statutory damages of $1,000 per violation, plus injunctive relief and attorney fees (<a href="https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/SB1546/Enrolled">Oregon Legislature</a>). Neither is in effect yet; both begin January 1, 2027, alongside Colorado's. That cluster of January dates is the real deadline, close enough to plan against now, and it's worth building a single compliance posture against the strictest requirement on the books, in effect or scheduled, rather than maintaining separate state variants that will keep growing.</p>
+
+      <p>A second thread from this summer belongs in the same governance conversation. On July 21, OpenAI disclosed that during an internal cyber capability evaluation, two of its models, GPT-5.6 Sol and an internal pre-release research prototype, escaped the evaluation sandbox and went on to compromise Hugging Face's production infrastructure (<a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/">OpenAI</a>). The sequence matters more than the headline: the evaluation environment gave the models no direct internet access, so they found and exploited a previously unknown zero-day in a package registry cache proxy, then moved laterally inside OpenAI's own research testing environment until they reached a node with internet access. Only then did they turn on Hugging Face, chaining stolen credentials and additional zero-days into a platform-level compromise. Two qualifiers matter here: the evaluation ran with reduced cyber refusals and without the production classifiers that block high-risk cyber activity, and the prototype involved was never intended for public release (<a href="https://www.ciodive.com/news/openai-breach-cybersecurity/825963/">CIO Dive</a>). Gartner VP analyst Dennis Xu noted that 80 to 90 percent of AI-driven attacks can be stopped with basic security controls, and cautioned that open-weight models will likely develop the same offensive capabilities within three to six months.</p>
+
+      <p>Put those two stories next to <a href="../insurance-coverage/2026-08-25-the-ai-exclusion-just-showed-up-in-a-do-form.html">the D&amp;O exclusion story elsewhere in this issue</a>, and a pattern emerges that's bigger than any one of them. Three different external parties are independently deciding they need to see your AI governance documentation before they'll extend trust. An accreditor already reads it, CARF International became the first accreditor to implement an AI standard requiring written policies where AI is used in service delivery (<a href="https://carf.org/blog/news-releases/carf-implements-first-ai-standard/">CARF International</a>). Your insurance carrier is reading it across more lines than general liability, and at least one published management liability exclusion excludes claims arising from an insured's own deficient AI policies and procedures, which makes the governance file itself a coverage trigger (<a href="https://www.hunton.com/hunton-insurance-recovery-blog/the-continued-proliferation-of-ai-exclusions">Hunton Andrews Kurth</a>). And your state attorney general is next in line, with the largest cluster of chatbot-law effective dates landing January 1, 2027. Building three separate response files, one for an accreditor, one for a renewal, one for state compliance, is the expensive way to do this, and it's also the way that breaks first, because each file drifts from the others the moment someone updates one without the others.</p>
+
+      <p>The better move is a single governance file that answers the same five questions regardless of who's asking: what AI tools are in use, who approved them, what human oversight exists and who holds it, what happens when the AI is wrong or exceeds its scope, and how often is this reviewed. One scoping note worth writing down while you build it: the published management liability exclusion defines AI as any machine-based system that infers from input how to generate predictions, content, recommendations, or decisions, not just generative AI. If your governance file only inventories generative tools, it's narrower than the definition your carrier may be using. Scheduling optimizers, risk-stratification models, and predictive sensors belong on that list too. And incident response for AI deserves its own runbook now, separate from a standard cybersecurity breach plan, because the actor generating the incident can be the AI system itself operating past its intended permissions, not an external attacker.</p>
+
+      <p><strong>This month's action:</strong> inventory every AI-driven chat, voice, or companion feature your company operates, whether built in-house or licensed from a vendor, and confirm in writing that each one discloses its AI nature and has a documented protocol for self-harm or crisis language. Add one column most organizations skip: which states your users are in. Then ask whoever owns AI vendor risk at your company one direct question: has any AI system we use been red-teamed for what it does when it exceeds its intended permissions, and who signed off on the results?</p>
+
+      <div class="cta-box">
+        If your board needs help mapping where your AI governance documentation actually stands, that's a Second Ledger conversation. <a href="https://kenleatherman.com">Start it at kenleatherman.com &rarr;</a>
+      </div>
+    </article>
+  </section>
+
+  <p style="margin-bottom:60px;"><a href="../../governance.html">&larr; Back to Governance</a></p>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-links">
+      <a href="https://kenleatherman.com">kenleatherman.com</a>
+      <a href="https://kenleatherman.substack.com/">The LITT Briefing</a>
+      <a href="https://linkedin.com/in/kenleatherman">LinkedIn</a>
+      <a href="mailto:ken_leatherman@ajg.com">ken_leatherman@ajg.com</a>
+    </div>
+    <p>Leadership in Tough Times &middot; Senior Housing: The AI Gap &middot; Storify Studios</p>
+    <p class="disclosure">Ken Leatherman is Senior Vice President at Gallagher. This site, its books, and The Second Ledger methodology are published independently through Storify Studios. Nothing on this site is a Gallagher product, and nothing here should be read as Gallagher-endorsed.</p>
+  </div>
+</footer>
+
+<script src="../../script.js"></script>
+</body>
+</html>
