@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Washington Took a Frontier AI Model Offline. Was That on Your Board's Agenda? | AI Implementation</title>
+<meta name="description" content="A federal directive took Anthropic's newest Claude models offline for eighteen days with no notice. One law firm says that is a board problem, not an IT one.">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="../../index.html" class="brand">AI <span>Implementation</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+    <nav class="main-nav">
+      <a href="../../senior-housing.html">Senior Housing</a>
+      <a href="../../governance.html" class="current">Governance</a>
+      <a href="../../insurance-coverage.html">Insurance Coverage</a>
+      <a href="https://kenleatherman.com" class="nav-cta">About Ken</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumb"><a href="../../index.html">AI Implementation</a> &rsaquo; <a href="../../governance.html">Governance</a> &rsaquo; September 2, 2026</div>
+
+  <section class="block">
+    <article class="post">
+      <p class="post-meta">From the September 2, 2026 LITT Briefing</p>
+      <h1 class="post-title">Washington Took a Frontier AI Model Offline. Was That on Your Board's Agenda?</h1>
+
+      <p>On June 9, 2026, Anthropic put Claude Fable 5 in front of the public, the first time a Mythos-class model had been broadly available to anyone. Companies wired it into workflows. Three days later, at 5:21 p.m. Eastern on June 12, the company received a federal export-control directive ordering it to suspend all access to Fable 5 and its more capable sibling, Mythos 5, by any foreign national, inside or outside the United States, including Anthropic's own employees. Rather than try to separate foreign nationals from domestic users in real time, Anthropic disabled both models globally within hours. Enterprises with live Fable 5 workflows got no advance notice and no transition period. Their sessions began throwing errors (Frantz Ward LLP).</p>
+
+      <p>The nominal trigger was a disclosed safety bypass. Amazon researchers had found that framing a request as a defensive code-review task could walk Fable 5 past its safety classifier into surfacing software vulnerabilities, later characterized as minor and previously known. Anthropic disputed that this constituted a universal jailbreak, arguing that if such a standard were applied across the industry "it would essentially halt all new model deployments for all frontier model providers." Controls were formally lifted June 30 after Anthropic shipped a hardened safety classifier and agreed to security commitments with the government, and redeployment began July 1. Roughly three weeks dark (NYU Shanghai RITS). At least one outlet argued the ban was never really about the jailbreak at all (TechCrunch).</p>
+
+      <p>The cost structure moved too, though not immediately. Fable 5 returned on standard subscriptions through July 7, with a temporary additional weekly usage allowance offered as compensation for the outage. After July 7, access shifted to metered usage credits at API rates, until flat-rate inclusion was later restored. Every enterprise that had built workflows around a fixed-cost assumption spent that stretch on a variable-cost structure, on a timeline it did not set and at a price it did not negotiate.</p>
+
+      <p>Here is why this belongs on a board agenda rather than a technology team's punch list. Law firm Frantz Ward argues that the episode exposes directors to derivative-suit liability under Delaware's Caremark oversight doctrine, specifically where a board has no reporting system that would surface single-model dependency, no policy governing which AI models may be embedded in critical operations, and no documented record of ever having discussed what happens operationally if a vendor's model goes dark. Not if the model gives a wrong answer. If it simply is not there. As the firm puts it: "The Fable episode is not a hypothetical risk scenario. It already happened, twice, within a month" (Frantz Ward LLP).</p>
+
+      <p>Most board-level AI governance conversations are about what the model gets wrong: hallucinations, bias, bad output, discriminatory decisions. Nearly every AI governance checklist in circulation reads the risk of a bad answer. Vanishingly few read the risk of no answer at all, for eighteen days, at a price that changed when the lights came back on.</p>
+
+      <p>Picture how the people running those workflows found out. Not a notice. Not a call from an account manager. A process that had worked that morning started returning errors, and somebody went looking for why.</p>
+
+      <p>Nobody misbehaved. No affected company made a bad decision. No model gave a wrong answer. No vendor breached a contract, missed a patch, or dragged its feet. Anthropic complied within hours, as it was required to. A government acted for reasons that had nothing to do with any customer, and every enterprise that had quietly made one model load-bearing found that out at the same moment, from an error message. There was no escalation path, no account manager who could help, and no contract term that would have mattered.</p>
+
+      <p>Vendor-concentration risk has been a supply-chain conversation for decades. What the Fable episode adds is a regulatory dimension: your AI vendor can be taken offline by government action, over a question you have no visibility into and no standing to influence. The boards still treating model dependency as purely operational, rather than as a governance item with legal teeth, are the exposed ones.</p>
+
+      <p><strong>This quarter's action:</strong> the fix costs nothing but a meeting and a set of minutes. Put one specific item on the board agenda: which of our operations would break, and for how long, if our primary AI vendor were ordered offline for eighteen days with no notice, and what would that cost us at whatever price it came back at. Add the follow-on question the Fable episode actually raises, which is whether anyone has qualified a second model for the workflows that matter. Then make sure the discussion is documented. Not because this is likely to happen to you specifically this month, but because the paper trail showing the board asked the question is the entire difference between a defensible governance record and a derivative-suit exhibit.</p>
+
+      <div class="cta-box">
+        This is the same governance-theater problem at the center of my book, <a href="https://www.amazon.com/dp/0998810371"><em>Senior Housing: The AI Gap: From Governance Theater to Deployment in 90 Days</em></a>, available on Amazon. If your board has not had this conversation yet, that is a Second Ledger conversation worth starting at <a href="https://kenleatherman.com">kenleatherman.com &rarr;</a>
+      </div>
+    </article>
+  </section>
+
+  <p style="margin-bottom:60px;"><a href="../../governance.html">&larr; Back to Governance</a></p>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-links">
+      <a href="https://kenleatherman.com">kenleatherman.com</a>
+      <a href="https://kenleatherman.substack.com/">The LITT Briefing</a>
+      <a href="https://linkedin.com/in/kenleatherman">LinkedIn</a>
+      <a href="mailto:ken_leatherman@ajg.com">ken_leatherman@ajg.com</a>
+    </div>
+    <p>Leadership in Tough Times &middot; Senior Housing: The AI Gap &middot; Storify Studios</p>
+    <p class="disclosure">Ken Leatherman is Senior Vice President at Gallagher. This site, its books, and The Second Ledger methodology are published independently through Storify Studios. Nothing on this site is a Gallagher product, and nothing here should be read as Gallagher-endorsed.</p>
+  </div>
+</footer>
+
+<script src="../../script.js"></script>
+</body>
+</html>
