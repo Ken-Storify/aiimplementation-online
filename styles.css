@@ -429,3 +429,26 @@ footer.site-footer .disclosure { color: #8f97ab; font-size: 0.82rem; max-width: 
 .breadcrumb { font-size: 0.85rem; margin: 22px 0 0; color: #888; }
 .breadcrumb a { color: var(--navy); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
+
+/* ---------- Starter Packet signup (homepage band, post box, landing page) ---------- */
+.signup-band {
+  background: var(--navy);
+  color: var(--white);
+  padding: 44px 0;
+  margin: 8px 0 0;
+}
+.signup-band h2 { color: var(--white); font-size: 1.6rem; border: none; margin-bottom: 10px; }
+.signup-band p { max-width: 720px; color: #e6e9f0; }
+.signup-band .hero-cta { display: inline-block; }
+
+.signup-box {
+  background: var(--gold-light);
+  border-left: 4px solid var(--gold);
+  padding: 16px 22px;
+  margin: 14px 0 8px;
+  color: var(--navy);
+}
+.signup-box a { color: var(--navy); font-weight: 700; text-decoration: underline; }
+
+.packet-list { padding-left: 20px; }
+.packet-list li { margin-bottom: 10px; }

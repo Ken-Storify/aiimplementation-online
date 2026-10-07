@@ -49,6 +49,12 @@ levels below are updated for every section that got a new post that week:
    So each week the card's outgoing Latest lands in the homepage archive tile,
    mirroring how it moves into the section page's Archive list.
 
+4. **Run the SEO script** — `python3 scripts/seo.py` from the repo root, before
+   committing. It adds canonical/Open Graph/JSON-LD tags and the Starter Packet
+   signup box to any new post, and regenerates `sitemap.xml`, `feed.xml`, and
+   `llms.txt`. It is idempotent, so running it every week is safe. Commit the
+   regenerated files with the post.
+
 When applying a pre-built weekly patch that only touches the section pages and
 post files, update `index.html` yourself in the same commit — both the three
 `.card-latest` blocks and the `.home-archive` tiles — so the homepage doesn't
