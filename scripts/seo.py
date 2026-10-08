@@ -30,7 +30,7 @@ AUTHOR = {
 }
 PUBLISHER = {"@type": "Organization", "name": "Storify Studio", "url": "https://kenleatherman.com"}
 IMAGE = BASE + "/images/og-share.png"
-BOOK_URL = "https://www.amazon.com/dp/B0GWW3X5F6"
+BOOK_URL = "https://www.amazon.com/dp/0998810371"
 
 SECTION_LABEL = {
     "senior-housing": "Senior Housing",

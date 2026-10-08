@@ -13,7 +13,7 @@
 
 ## Author and book
 - [Ken Leatherman](https://kenleatherman.com): author, speaker, creator of the Leadership in Tough Times (LITT) framework
-- [Senior Housing: The AI Gap](https://www.amazon.com/dp/B0GWW3X5F6): From Governance Theater to Deployment in 90 Days
+- [Senior Housing: The AI Gap](https://www.amazon.com/dp/0998810371): From Governance Theater to Deployment in 90 Days
 - [The LITT Briefing](https://kenleatherman.substack.com/): weekly newsletter
 
 ## Recent posts
