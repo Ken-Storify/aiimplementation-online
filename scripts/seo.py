@@ -209,6 +209,7 @@ def write_llms(posts):
         "",
         "## Free resource",
         f"- [Board-Ready AI Governance Starter Packet]({BASE}/starter-packet.html): board resolution, data governance policy, 90-day sprint, and board briefing templates",
+        f"- [General Business AI Governance Starter Packet]({BASE}/general-business-packet.html): board resolution, AI use and data policy, 90-day sprint, and board briefing for any industry",
         "",
         "## Author and book",
         "- [Ken Leatherman](https://kenleatherman.com): author, speaker, creator of the Leadership in Tough Times (LITT) framework",
