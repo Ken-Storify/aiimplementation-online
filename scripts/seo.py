@@ -6,8 +6,9 @@ Run from the repo root:  python3 scripts/seo.py
 What it does
   1. Adds canonical, Open Graph, Twitter and JSON-LD tags to the <head> of every
      page that does not have them yet (new weekly posts get them automatically).
-  2. Adds the "free Starter Packet" signup box after the CTA box on posts that lack it.
-  3. Writes sitemap.xml, feed.xml (RSS) and llms.txt from the files in the repo.
+  2. Adds the Plausible analytics script to any page missing it.
+  3. Adds the "free Starter Packet" signup box after the CTA box on posts that lack it.
+  4. Writes sitemap.xml, feed.xml (RSS) and llms.txt from the files in the repo.
 """
 import html
 import json
@@ -130,6 +131,9 @@ def head_block(rel, title, desc, url, is_post, date):
     return "\n".join(lines) + "\n"
 
 
+PLAUSIBLE = '<script defer data-domain="www.youraigap.com" src="https://plausible.io/js/script.tagged-events.js"></script>\n'
+
+
 def fix_page(path: Path):
     rel, text, title, desc, url, is_post, section, date = page_info(path)
     changed = False
@@ -140,6 +144,9 @@ def fix_page(path: Path):
         new = re.sub(r'(<div class="cta-box">.*?</div>)(\s*</article>)', lambda m: m.group(1) + SIGNUP_BOX + m.group(2), text, count=1, flags=re.S)
         if new != text:
             text, changed = new, True
+    if "plausible.io" not in text:
+        text = text.replace("</head>", PLAUSIBLE + "</head>", 1)
+        changed = True
     if "Storify Studios" in text:
         text = text.replace("Storify Studios", "Storify Studio")
         changed = True

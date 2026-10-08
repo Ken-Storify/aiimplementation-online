@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.youraigap.com/governance.html</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.youraigap.com/</loc><lastmod>2026-10-07</lastmod><priority>1.0</priority></url>
-  <url><loc>https://www.youraigap.com/insurance-coverage.html</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.youraigap.com/general-business-packet.html</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.youraigap.com/governance.html</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.youraigap.com/</loc><lastmod>2026-10-08</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.youraigap.com/insurance-coverage.html</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.youraigap.com/posts/governance/2026-08-05-the-ftc-just-put-a-preemption-argument-on-the-table.html</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.youraigap.com/posts/governance/2026-08-12-new-jersey-turned-algorithmic-rent-coordination-into-an-antitrust-case.html</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.youraigap.com/posts/governance/2026-08-25-three-parties-now-want-to-read-your-ai-governance-file-before-they-trust-you.html</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority></url>
@@ -28,7 +29,7 @@
   <url><loc>https://www.youraigap.com/posts/senior-housing/2026-09-23-nobody-owns-your-ai-hire-someone-who-does.html</loc><lastmod>2026-09-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.youraigap.com/posts/senior-housing/2026-09-30-the-camera-points-both-ways.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.youraigap.com/posts/senior-housing/2026-10-07-your-nurses-will-find-an-ai-tool-the-only-question-is-whose.html</loc><lastmod>2026-10-07</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.youraigap.com/senior-housing.html</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.youraigap.com/start-here.html</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.youraigap.com/starter-packet.html</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.youraigap.com/senior-housing.html</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.youraigap.com/start-here.html</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.youraigap.com/starter-packet.html</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
 </urlset>
