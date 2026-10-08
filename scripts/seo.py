@@ -134,7 +134,7 @@ def head_block(rel, title, desc, url, is_post, date):
     return "\n".join(lines) + "\n"
 
 
-PLAUSIBLE = '<script defer data-domain="www.youraigap.com" src="https://plausible.io/js/script.tagged-events.js"></script>\n'
+PLAUSIBLE = '<script defer data-domain="youraigap.com" src="https://plausible.io/js/script.tagged-events.js"></script>\n'
 
 
 def fix_page(path: Path):
