@@ -29,6 +29,7 @@ AUTHOR = {
     ],
 }
 PUBLISHER = {"@type": "Organization", "name": "Storify Studio", "url": "https://kenleatherman.com"}
+IMAGE = BASE + "/images/og-share.png"
 BOOK_URL = "https://www.amazon.com/dp/B0GWW3X5F6"
 
 SECTION_LABEL = {
@@ -119,7 +120,9 @@ def head_block(rel, title, desc, url, is_post, date):
         f'<meta property="og:title" content="{e(title, quote=True)}">',
         f'<meta property="og:description" content="{e(desc, quote=True)}">',
         f'<meta property="og:url" content="{url}">',
-        '<meta name="twitter:card" content="summary">',
+        f'<meta property="og:image" content="{IMAGE}">',
+        '<meta name="twitter:card" content="summary_large_image">',
+        f'<meta name="twitter:image" content="{IMAGE}">',
         f'<meta name="twitter:title" content="{e(title, quote=True)}">',
         f'<meta name="twitter:description" content="{e(desc, quote=True)}">',
     ]
@@ -144,6 +147,10 @@ def fix_page(path: Path):
         new = re.sub(r'(<div class="cta-box">.*?</div>)(\s*</article>)', lambda m: m.group(1) + SIGNUP_BOX + m.group(2), text, count=1, flags=re.S)
         if new != text:
             text, changed = new, True
+    if "og:image" not in text and 'rel="canonical"' in text:
+        text = text.replace('<meta name="twitter:card" content="summary">',
+            f'<meta property="og:image" content="{IMAGE}">\n<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="{IMAGE}">', 1)
+        changed = True
     if "plausible.io" not in text:
         text = text.replace("</head>", PLAUSIBLE + "</head>", 1)
         changed = True
