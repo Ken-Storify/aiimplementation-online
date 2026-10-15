@@ -454,7 +454,7 @@ footer.site-footer .disclosure { color: #8f97ab; font-size: 0.82rem; max-width: 
 .packet-list li { margin-bottom: 10px; }
 
 /* AI Radio */
-.radio-band { background: var(--gold-light); border-top: 4px solid var(--gold); padding: 36px 0; margin: 8px 0 0; }
+.radio-band { background: var(--gold-light); border-top: 4px solid var(--gold); border-bottom: 1px solid #e3d7bb; padding: 28px 0; margin: 0; }
 .radio-band-inner { display: flex; gap: 28px; align-items: center; }
 .radio-band img { border-radius: 8px; flex: 0 0 auto; width: 140px; height: 140px; object-fit: cover; }
 .radio-band h2 { color: var(--navy); font-size: 1.6rem; border: none; margin: 4px 0 8px; }

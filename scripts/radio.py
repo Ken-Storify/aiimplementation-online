@@ -277,8 +277,8 @@ def update_home(ep):
     if "<!-- radio:start -->" in s:
         s = re.sub(r"<!-- radio:start -->.*?<!-- radio:end -->", lambda m: block, s, flags=re.S)
     else:
-        marker = '<section class="signup-band">'
-        assert marker in s, "signup band not found in index.html"
+        marker = '<div class="hero">'
+        assert marker in s, "hero not found in index.html"
         s = s.replace(marker, block + "\n\n" + marker, 1)
     p.write_text(s, encoding="utf-8")
 
