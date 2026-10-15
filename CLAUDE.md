@@ -69,3 +69,21 @@ cards, each showing the correct latest date/title linking to the right post.
 
 Routine publishing touches only the files above. Don't edit unrelated content,
 `governance.html`'s non-Latest sections, Substack, or LinkedIn unless asked.
+
+## Weekly AI Radio episode
+
+Each week's AI Radio is published with one command from the repo root; it does
+the page, the archive, the homepage band, and the podcast feed:
+
+```
+python3 scripts/radio.py --mp3 <episode>.mp3 --notes show_notes.json --cover <cover>.jpg
+python3 scripts/seo.py
+```
+
+It writes `radio/<date>-<slug>.html`, `audio/<date>-<slug>.mp3`,
+`images/radio-<date>-<slug>.jpg`, regenerates `ai-radio.html`, `radio.xml`, and the
+`<!-- radio:start -->…<!-- radio:end -->` "Listen to this week's AI Radio" band in
+`index.html` (do not hand-edit that band), then `seo.py` adds Plausible and refreshes
+the sitemap and `llms.txt`. Commit everything, including the MP3 (about 15 MB, fine for
+GitHub and Vercel). The show notes JSON must have `show_title`, `show_duration`,
+`two_sentence_summary`, `date_of_generation` and `timecoded_transcript`.

@@ -7,6 +7,9 @@
 - [Insurance Coverage](https://www.youraigap.com/insurance-coverage.html): AI exclusion endorsements, silent AI exposure, underwriting, and a coverage self-check
 - [Governance](https://www.youraigap.com/governance.html): State AI law and board-level governance for general business
 
+## AI Radio
+- [AI Radio](https://www.youraigap.com/ai-radio.html): weekly short audio program on AI governance, coverage, and decision ownership, with transcripts
+
 ## Free resource
 - [Board-Ready AI Governance Starter Packet](https://www.youraigap.com/starter-packet.html): board resolution, data governance policy, 90-day sprint, and board briefing templates
 - [General Business AI Governance Starter Packet](https://www.youraigap.com/general-business-packet.html): board resolution, AI use and data policy, 90-day sprint, and board briefing for any industry

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel>
+    <title>AI Radio from AI Implementation</title>
+    <link>https://www.youraigap.com/ai-radio.html</link>
+    <description>A short weekly AI-generated audio program on AI governance, insurance coverage, and decision ownership.</description>
+    <language>en-us</language>
+    <itunes:author>Ken Leatherman</itunes:author>
+    <itunes:image href="https://www.youraigap.com/images/radio-2026-10-15-ai-governance-and-decision-ownership.jpg"/>
+    <item><title>AI Governance and Decision Ownership</title><link>https://www.youraigap.com/radio/2026-10-15-ai-governance-and-decision-ownership.html</link><guid>https://www.youraigap.com/radio/2026-10-15-ai-governance-and-decision-ownership.html</guid><pubDate>Thu, 15 Oct 2026 12:00:00 -0000</pubDate><description>This episode explores the critical shift toward human accountability in enterprise AI, focusing on new California regulations and insurance industry changes. Experts discuss the &#x27;Decision Owner&#x27; framework in senior housing and healthcare, emphasizing that while machines can advise, humans must remain the ultimate gatekeepers.</description><enclosure url="https://www.youraigap.com/audio/2026-10-15-ai-governance-and-decision-ownership.mp3" length="14902378" type="audio/mpeg"/><itunes:duration>10:20</itunes:duration></item>
+</channel></rss>
