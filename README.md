@@ -115,3 +115,4 @@ by hand, everything here is structured so that move wouldn't require starting ov
   (`LITT_Briefing_Split_Workflow.docx`).
 - Build out the General Business Starter Packet and wire it into governance.html the same
   way the senior-housing packet works.
+  
